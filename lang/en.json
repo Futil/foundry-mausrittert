@@ -17,6 +17,7 @@
 	},
     "Maus.ActorName" : "Name",
     "Maus.ActorBackground" : "Background",
+    "Maus.ActorDescription" : "Description",
     "Maus.ActorWants" : "Wants",
     "Maus.ActorDisposition" : "Disposition",
     "Maus.ActorType" : "Type",
@@ -57,6 +58,8 @@
     "Maus.CardClear" : "Clear",
     "Maus.OptionsWidth" : "Width",
     "Maus.OptionsHeight" : "Height",
+    "Maus.SelectItemType" : "Select Type",
+    "Maus.ItemType" : "Item Type",
 
     "Maus.ItemWorth" : "Worth",
     "Maus.ItemCurrentUsage" : "Current Usage",
@@ -73,6 +76,7 @@
     "Maus.ItemMaxStore" : "Max",
     "Maus.Item" : "Item",
 
+    "Maus.Create" : "Create",
     "Maus.Cancel" : "Cancel",
 
     "Maus.Roll" : "Roll",
@@ -98,5 +102,6 @@
     "Maus.RollTarget" : "Target",
     "Maus.RollAD" : "A/D",
     "Maus.RollMiscast" : "Miscast",
-    "Maus.RollMiscastDesc" : "Take [[/r !miscast!d6]] Will Damage <br/> Then, make a will save, taking the <i>drained</i> condition on a failure."
+    "Maus.RollMiscastDesc" : "Take [[/r !miscast!d6]] Will Damage <br/> Then, make a will save, taking the <i>drained</i> condition on a failure.",
+    "Maus.RollClearCondition" : "Clear"
 }

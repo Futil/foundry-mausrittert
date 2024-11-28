@@ -908,10 +908,13 @@
 .mausritter .header-border {
   display: grid;
   padding: 0.3em;
-  margin: 5px;
   border: 2px solid black;
   border-radius: 10px;
   background: linear-gradient(90deg, rgba(221,221,221,1) 0%, rgba(221,221,221,1) 34%,rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%);
+}
+
+.mausritter .header-border:last-child {
+  margin-left: 5px;
 }
 
 .mausritter .creature-header-border {
