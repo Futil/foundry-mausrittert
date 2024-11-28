@@ -148,23 +148,23 @@ export class MausritterActorSheet extends ActorSheet {
             let creatableItems = ['item', 'weapon', 'spell', 'armor', 'condition', 'storage'];
             let selectList = "";
 
-            creatableItems.forEach(type => selectList += "<option value='" + type + "'>" + type + "</option>")
+            creatableItems.forEach(type => selectList += "<option value='" + type + "'>" + game.i18n.localize('TYPES.Item.' + type) + "</option>")
 
-            //Select the stat of the roll.
+            // Select type of item.
             let t = new Dialog({
-                title: "Select Stat",
-                content: "<h2> Item Type </h2> <select style='margin-bottom:10px;'name='type' id='type'> " + selectList + "</select> <br/>",
+                title: game.i18n.localize('Maus.SelectItemType'),
+                content: "<h2> " + game.i18n.localize('Maus.ItemType') + " </h2> <select style='margin-bottom:10px;'name='type' id='type'> " + selectList + "</select> <br/>",
                 buttons: {
                     roll: {
                         icon: '<i class="fas fa-check"></i>',
-                        label: "Create",
+                        label: game.i18n.localize('Maus.Create'),
                         callback: async (html) => {
                             this._onItemCreate(ev, html.find('[id=\"type\"]')[0].value)
                         }
                     },
                     cancel: {
                         icon: '<i class="fas fa-times"></i>',
-                        label: "Cancel",
+                        label: game.i18n.localize('Maus.Cancel'),
                         callback: () => {
                         }
                     }

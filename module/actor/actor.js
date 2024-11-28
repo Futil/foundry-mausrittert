@@ -518,7 +518,7 @@ export class MausritterActor extends Actor {
       item.system.description += "<br/>";
     }
     if(item.type == "condition"){
-      item.system.description += item.system.desc+"<br/><strong>Clear: </strong>"+item.system.clear;
+      item.system.description += item.system.desc+"<br/><strong>" + game.i18n.localize('Maus.RollClearCondition') + ": </strong>"+item.system.clear;
     }
 
     var templateData = {
